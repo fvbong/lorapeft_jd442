@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fvbong-lorapeft_jd442"
+version = "0.1.0"
+description = "解析时间标记，排列LoRA 与参数高效微调研究员·混合精度的溢出与下溢的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "fvbong" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://fvbong.github.io"
+Repository = "https://github.com/fvbong/lorapeft_jd442"
+Issues = "https://github.com/fvbong/lorapeft_jd442/issues"
+
+[project.scripts]
+lorapeft_jd442 = "lorapeft_jd442:main"
+
+[tool.setuptools]
+py-modules = ["lorapeft_jd442"]
